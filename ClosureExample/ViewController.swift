@@ -15,6 +15,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func showAlertTapped(_ sender: UIButton) {
+        let alert = AlertView(title: "Hello", message: "It's Just Start", sourceView: sender)
+        
+        self.present(alert, animated: true, completion: nil)
+    }
 
 }
 
